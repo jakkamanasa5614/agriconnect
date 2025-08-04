@@ -1,0 +1,46 @@
+name: agriconnect
+description: A smart farming app using Firebase and Flutter
+publish_to: 'none' # This is a private project
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase Core - Required for all Firebase services
+  firebase_core: ^2.27.0
+
+  # Firebase Auth - Login/Signup functionality
+  firebase_auth: ^4.17.2
+
+  # Firestore - Realtime database for storing user roles, data
+  cloud_firestore: ^4.15.3
+
+  # UI & Utility
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+ 
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_background: "#38EF7D"
+  adaptive_icon_foreground: "assets/images/icon.png"
+
+
+    # Optional if you use images

@@ -1,6 +1,6 @@
 name: agriconnect
 description: A smart farming app using Firebase and Flutter
-publish_to: 'none' # This is a private project
+publish_to: 'none'
 
 version: 1.0.0+1
 
@@ -11,29 +11,47 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # Firebase Core - Required for all Firebase services
-  firebase_core: ^2.27.0
+  # Logging
+  logging: ^1.1.0
 
-  # Firebase Auth - Login/Signup functionality
-  firebase_auth: ^4.17.2
+  # Video player for splash screen
+  video_player: ^2.6.0
 
-  # Firestore - Realtime database for storing user roles, data
-  cloud_firestore: ^4.15.3
+  # Social sign-in
+  google_sign_in: ^6.2.1
+  flutter_facebook_auth: ^7.0.1
 
-  # UI & Utility
-  cupertino_icons: ^1.0.2
+  # Local storage
+  shared_preferences: ^2.2.2
+
+  # Firebase core packages
+  firebase_core: ^3.3.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.0
+  firebase_storage: ^12.4.10
+
+  # UI and animation
+  cupertino_icons: ^1.0.8
+  lottie: ^3.1.0
+
+  # State management
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  flutter_lints: ^3.0.1
-  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^3.0.2
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
 
- 
+  assets:
+    - assets/images/icon.png
+    - assets/images/google_logo.png
+    - assets/images/facebook_logo.png
+    - assets/bg.png
+    - assets/videos/video.mp4
 
 flutter_icons:
   android: true
@@ -41,6 +59,3 @@ flutter_icons:
   image_path: "assets/images/icon.png"
   adaptive_icon_background: "#38EF7D"
   adaptive_icon_foreground: "assets/images/icon.png"
-
-
-    # Optional if you use images
